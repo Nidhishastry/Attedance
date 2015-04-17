@@ -30,6 +30,8 @@ public class MyActivity extends Activity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private ShareActionProvider mshareActionProvide;
+    public static final String TAG = MyActivity.class.getSimpleName();
+
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
@@ -39,7 +41,7 @@ public class MyActivity extends Activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
+        ActionBar actionBar = getActionBar();
 
         getActionBar().setIcon(R.drawable.images);
 
@@ -51,6 +53,8 @@ public class MyActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+
     }
 
     @Override

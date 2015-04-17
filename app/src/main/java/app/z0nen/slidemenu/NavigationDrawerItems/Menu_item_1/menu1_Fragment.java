@@ -26,11 +26,9 @@ public class menu1_Fragment extends Fragment {
       //  adapterViewPager = new MyPagerAdapter(fragManager);
       //  vpPager.setAdapter(adapterViewPager);
       //  fragment.getView().setBackgroundColor(Color.WHITE);
-       // ColorDrawable cd = new ColorDrawable(getActivity().getResources().getColor(
-         //       R.color.material_deep_teal_200));
         rootview.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_200));
 
-       // getActivity().getWindow().setBackgroundDrawable(cd);
+
         return rootview;
     }
 }

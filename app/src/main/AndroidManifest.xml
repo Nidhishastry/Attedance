@@ -2,23 +2,49 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.z0nen.slidemenu" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".Slide_Menu_Slide_Menu"
         android:allowBackup="true"
         android:icon="@mipmap/new_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MyActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="Attendance" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".NavigationDrawerItems.Menu_item_1.menu1_fragment_Child"
-            android:label="@string/title_activity_menu1_fragment__child" >
+            android:name=".LoginAccess.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".LoginAccess.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password" >
+        </activity>
+        <activity
+            android:name=".LoginAccess.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".LoginAccess.BaseLoginActivity"
+            android:label="@string/title_activity_base_login"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
     </application>
 
